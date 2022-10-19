@@ -1,6 +1,6 @@
 # artsupply
 
-[![npm version](https://badge.fury.io/js/goodgraphics.svg)](https://badge.fury.io/js/artsupply)
+[![npm version](https://badge.fury.io/js/artsupply.svg)](https://badge.fury.io/js/artsupply)
 
 A utility library for creative coding.
 
@@ -17,7 +17,7 @@ npm i artsupply
 unpkg
 
 ```
-<script src="https://unpkg.com/goodgraphics"></script>
+<script src="https://unpkg.com/artsupply"></script>
 ```
 
 ### Use
