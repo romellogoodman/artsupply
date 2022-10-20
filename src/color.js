@@ -1,3 +1,7 @@
+export const getHSLColor = (step) => {
+  return `hsl(${step % 360}, 100%, 50%)`;
+};
+
 // Replace all the colors in the list with white except for the index layer.
 export const isolateColorLayer = (list, index) => {
   const colors = new Array(list.length).fill(null).map(() => '#ffffff');
@@ -5,8 +9,4 @@ export const isolateColorLayer = (list, index) => {
   colors[index] = list[index];
 
   return colors;
-};
-
-export const getHSLColor = (step) => {
-  return `hsl(${step % 360}, 100%, 50%)`;
 };
