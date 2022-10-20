@@ -118,7 +118,7 @@ export const randomPendulums = (numberOfPendulums = 4) => {
  *
  * @returns {object}           - The x and y points
  */
-export const generateHarmonographXY = (drawingTime, size, pendulums = randomPendulums()) => {
+export const generateHarmonograph = (drawingTime, size, pendulums = randomPendulums()) => {
   let i = 0;
   let time = 0;
   const timeIncrement = 0.01;

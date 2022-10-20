@@ -4,7 +4,7 @@
  * https://github.com/georgedoescode/generative-utils/blob/master/src/createVoronoiDiagram.js
  */
 import { Delaunay } from 'd3-delaunay';
-import { centroidOfPoints, distanceToSegment } from 'common/points';
+import { centroidOfPoints, distanceToSegment } from './points';
 
 const defaultOpts = {
   width: 1024,
