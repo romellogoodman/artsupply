@@ -109,6 +109,7 @@ function nextPoint() {
 function allPoints() {
   var point = null;
   var result = new Array(0);
+  // eslint-disable-next-line no-constant-condition
   while (true) {
     point = nextPoint();
     if (point == null) {
