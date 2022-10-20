@@ -1,17 +1,5 @@
-import { MersenneTwister19937, Random } from 'random-js';
-import SimplexNoise from 'simplex-noise';
-
-const getRandom = (randomSeed) => {
-  const seed = randomSeed || MersenneTwister19937.autoSeed();
-
-  return new Random(seed);
-};
-
-const simplex = new SimplexNoise();
-
-const noise2D = (x, y, frequency, amplitude) => {
-  return simplex.noise2D(x * frequency, y * frequency) * amplitude;
-};
+import { noise2D } from './noise';
+import { getRandom } from './random';
 
 const getBounds = (width, height, margin) => {
   const marginWidth = width * margin;
