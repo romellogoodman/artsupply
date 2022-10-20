@@ -1,3 +1,5 @@
+import Quadtree from '@timohausmann/quadtree-js';
+
 /**
  * Taken From:
  * https://github.com/georgedoescode/generative-utils/blob/master/src/createQtGrid.js

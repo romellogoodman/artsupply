@@ -10,6 +10,7 @@
     "prepublish": "npm run lint && npm test && npm run build"
   },
   "dependencies": {
+    "@timohausmann/quadtree-js": "^1.2.5",
     "d3-delaunay": "^6.0.2",
     "random-js": "^2.1.0",
     "simplex-noise": "^3.0.0"
