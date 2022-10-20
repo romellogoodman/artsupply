@@ -6,7 +6,7 @@
     "dev": "microbundle watch",
     "build": "microbundle",
     "lint": "eslint .",
-    "test": "echo \"tests\"",
+    "test": "jest .",
     "prepublish": "npm run lint && npm test && npm run build"
   },
   "dependencies": {
