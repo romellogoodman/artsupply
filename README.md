@@ -23,20 +23,46 @@ unpkg
 ### Use
 
 ```
-import _art from 'artsupply';
+import _supply from 'artsupply';
 
-const points = _art.functionName()
+const points = _supply.functionName()
 ```
 
 ## API
 
-### Section
+### Calculation
+
+#### heightAlongSinWave
 
 More tk
 
-### Flow Fields
+#### map
 
-<!-- https://github.com/romellogoodman/flow-field.js -->
+More tk
+
+#### polarToCartesian
+
+More tk
+
+#### toDegrees
+
+More tk
+
+#### toRadians
+
+More tk
+
+### Color
+
+#### getHSLColor
+
+More tk
+
+#### isolateColorLayer
+
+More tk
+
+### Flow Field
 
 #### generateParticles
 
@@ -48,17 +74,6 @@ Creates the particles for a flow field.
 - `@param {String} seed` Random (random-js) seed.
 - `@param {Number} width` Width of space.
 - `@return {Array}` List of particle objects containing the starting x and y coordinates.
-
-#### moveParticle
-
-Computes the new position for a particle and adds it to the `particle.line` array.
-
-- `@param {Number} amplitude` Controls the range of values we get from the noise function.
-- `@param {Number} damping` Slows down the particle (think friction).
-- `@param {Number} frequency` Controls how quickly/slowly the noise function is "evolving over time".
-- `@param {Number} lengthOfStep` Amount to move the coordinate.
-- `@param {Object} particle` Particle object containing the.
-- `@return {Void}` Operates on the particle and returns nothing.
 
 #### generateField
 
@@ -74,6 +89,151 @@ Creates a flow field with particles and lines.
 - `@param {String} seed` Random (random-js) seed.
 - `@param {Number} width` Width of space.
 - `@return {Array}` List of particle objects containing the line coordinates.
+
+#### moveParticle
+
+Computes the new position for a particle and adds it to the `particle.line` array.
+
+- `@param {Number} amplitude` Controls the range of values we get from the noise function.
+- `@param {Number} damping` Slows down the particle (think friction).
+- `@param {Number} frequency` Controls how quickly/slowly the noise function is "evolving over time".
+- `@param {Number} lengthOfStep` Amount to move the coordinate.
+- `@param {Object} particle` Particle object containing the.
+- `@return {Void}` Operates on the particle and returns nothing.
+
+### Harmonograph
+
+#### adjustXY
+
+More tk
+
+#### generateHarmonograph
+
+More tk
+
+#### randomPendulums
+
+More tk
+
+### Interpolation
+
+#### lerp
+
+More tk
+
+#### lerpColor
+
+More tk
+
+#### lerpColorMulti
+
+More tk
+
+#### linearInterpolation
+
+Interpolate the values of two objects' keys. More tk.
+
+### Misc
+
+#### fractal
+
+More tk
+
+#### subdivision
+
+More tk
+
+### Noise
+
+#### noise1D
+
+More tk
+
+#### noise2D
+
+More tk
+
+#### noise3D
+
+More tk
+
+#### noise4D
+
+More tk
+
+#### octive2D
+
+More tk
+
+### Points
+
+#### centroidOfPoints
+
+More tk
+
+#### dist2
+
+More tk
+
+#### distanceBetweenTwoPoints
+
+More tk
+
+#### distanceToSegment
+
+More tk
+
+#### getAngleOfPolygonPoints
+
+More tk
+
+#### getPolygonPoints
+
+More tk
+
+#### getRandomPoints
+
+More tk
+
+#### getSprialPoints
+
+More tk
+
+#### spline
+
+More tk
+
+#### toPoints
+
+More tk
+
+### Poisson
+
+#### PoissonDisk
+
+More tk
+
+### Quadtree
+
+#### generateQtGrid
+
+More tk
+
+### Random
+
+#### getRandom
+
+More tk
+
+#### randomBias
+
+More tk
+
+### Voronoi
+
+#### generateVoronoi
+
+More tk
 
 ## Contributing
 
