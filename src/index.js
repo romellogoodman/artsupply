@@ -1,5 +1,14 @@
 export { heightAlongSinWave, map, polarToCartesian, toDegrees, toRadians } from './calculation.js';
-export { getHSLColor, isolateColorLayer } from './color.js';
+export {
+  getHSLColor,
+  getPaletteColor,
+  hexToHSL,
+  hslToHex,
+  isolateColorLayer,
+  modulateColorHSL,
+  modulateColorHex,
+  palettes
+} from './color.js';
 export { generateField, generateParticles, moveParticle } from './flow-field';
 export { adjustXY, generateHarmonograph, randomPendulums } from './harmonograph.js';
 export { lerp, lerpColor, lerpColorMulti, linearInterpolation } from './interpolation.js';
@@ -18,6 +27,6 @@ export {
   toPoints
 } from './points.js';
 export { PoissonDisk } from './poisson.js';
-export { generateQtGrid } from './quadtree.js';
+// export { generateQtGrid } from './quadtree.js';
 export { getRandom, randomBias } from './random.js';
-export { generateVoronoi } from './voronoi.js';
+// export { generateVoronoi } from './voronoi.js';

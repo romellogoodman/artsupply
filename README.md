@@ -32,6 +32,10 @@ const points = _supply.functionName()
 
 ### Calculation
 
+#### constrain
+
+More tk
+
 #### heightAlongSinWave
 
 More tk
@@ -58,7 +62,31 @@ More tk
 
 More tk
 
+#### hexToHSL
+
+More tk
+
+#### hslToHex
+
+More tk
+
 #### isolateColorLayer
+
+More tk
+
+#### modulateColorHSL
+
+More tk
+
+#### modulateColorHex
+
+More tk
+
+#### palettes
+
+More tk
+
+#### getPaletteColor
 
 More tk
 
