@@ -1,3 +1,7 @@
+export const constrain = (n, low, high) => {
+  return Math.max(Math.min(n, high), low);
+};
+
 /**
  * Map a number from one range to another range
  * https://gist.github.com/xposedbones/75ebaef3c10060a3ee3b246166caab56
