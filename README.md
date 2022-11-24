@@ -253,6 +253,10 @@ More tk
 
 More tk
 
+#### getRandomWithSeed
+
+More tk
+
 #### randomBias
 
 More tk
