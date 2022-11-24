@@ -6,6 +6,12 @@ export const getRandom = (randomSeed) => {
   return new Random(seed);
 };
 
+export const getRandomWithSeed = (randomSeed) => {
+  const seed = randomSeed || MersenneTwister19937.autoSeed();
+
+  return { random: new Random(seed), seed };
+};
+
 /**
  * Taken From:
  * https://github.com/georgedoescode/generative-utils/blob/master/src/randomBias.js

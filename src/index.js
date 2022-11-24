@@ -28,5 +28,5 @@ export {
 } from './points.js';
 export { PoissonDisk } from './poisson.js';
 // export { generateQtGrid } from './quadtree.js';
-export { getRandom, randomBias } from './random.js';
+export { getRandom, getRandomWithSeed, randomBias } from './random.js';
 // export { generateVoronoi } from './voronoi.js';
