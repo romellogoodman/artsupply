@@ -24,7 +24,9 @@ export const heightAlongSinWave = (currentIndex, numberOfPoints, height) => {
  * https://en.wikipedia.org/wiki/Polar_coordinate_system
  */
 export const polarToCartesian = (centerX, centerY, radius, angleInDegrees) => {
-  const angleInRadians = toRadians(angleInDegrees);
+  // TODO: Switching toRadians breaks the code
+  // const angleInRadians = toRadians(angleInDegrees);
+  const angleInRadians = ((angleInDegrees - 90) * Math.PI) / 180.0;
 
   return {
     x: centerX + radius * Math.cos(angleInRadians),
