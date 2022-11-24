@@ -67,7 +67,7 @@ export const lerpColorMulti = (colors, currentStep, totalSteps) => {
 };
 
 export const linearInterpolation = ({ from, times = 10, to } = {}) => {
-  const values = new Array(times).fill(null).map((index) => {
+  const values = new Array(times).fill(null).map((_, index) => {
     const input = {};
 
     input.index = index;
