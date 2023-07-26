@@ -1,43 +1,22 @@
-export const constrain = (n, low, high) => {
-  return Math.max(Math.min(n, high), low);
+export const clamp = (number, min, max) => {
+  return number < min ? min : number > max ? max : number;
 };
 
-/**
- * Map a number from one range to another range
- * https://gist.github.com/xposedbones/75ebaef3c10060a3ee3b246166caab56
- */
 export const map = (number, inMin, inMax, outMin, outMax) => {
   return ((number - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin;
 };
 
-export const heightAlongSinWave = (currentIndex, numberOfPoints, height) => {
-  const angle = map(currentIndex, 0, numberOfPoints, 0, 360);
-  const radians = toRadians(angle);
-  const sinAngle = Math.sin(radians);
-  const stepHeight = height * sinAngle;
-
-  return stepHeight;
-};
-
-/**
- * Polar coordinates explainer:
- * https://en.wikipedia.org/wiki/Polar_coordinate_system
- */
-export const polarToCartesian = (centerX, centerY, radius, angleInDegrees) => {
-  // TODO: Switching toRadians breaks the code
+export const polarToCartesian = (x, y, radius, angleInDegrees) => {
+  // TODO: Refactor to use toRadians
   // const angleInRadians = toRadians(angleInDegrees);
   const angleInRadians = ((angleInDegrees - 90) * Math.PI) / 180.0;
 
   return {
-    x: centerX + radius * Math.cos(angleInRadians),
-    y: centerY + radius * Math.sin(angleInRadians)
+    x: x + radius * Math.cos(angleInRadians),
+    y: y + radius * Math.sin(angleInRadians)
   };
 };
 
-/**
- * Taken From:
- * https://stackoverflow.com/questions/9705123/how-can-i-get-sin-cos-and-tan-to-use-degrees-instead-of-radians
- */
 export const toDegrees = (angle) => {
   return angle * (180 / Math.PI);
 };
