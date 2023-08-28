@@ -1,4 +1,4 @@
-import { map } from './calculation';
+import { clamp, map } from './calculation';
 
 export const lerp = (start, end, percent) => {
   return start * (1 - percent) + end * percent;
@@ -26,4 +26,10 @@ export const linearInterpolation = (times, values = {}) => {
       [key]: map(index, 0, times - 1, value[0], value[1])
     };
   });
+};
+
+export const smoothstep = (number, min, max) => {
+  const value = clamp((number - min) / (max - min), 0, 1);
+
+  return value * value * (3 - 2 * value);
 };
