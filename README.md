@@ -126,6 +126,15 @@ Compute an object full of interpolations.
 - `@param {Object} values` An object containing the start and end numbers in an array.
 - `@return {Array}` Returns the list of interpolations.
 
+#### smoothstep
+
+[Smoothstep](https://en.wikipedia.org/wiki/Smoothstep) performs Hermite interpolation between two values.
+
+- `@param {Number} number` The number to interpolate.
+- `@param {Number} min` The min of the range.
+- `@param {Number} max` The max of the range.
+- `@return {Number}` Returns a value between 0.0 to 1.0.
+
 ### Noise
 
 The noise functions are built on top of [simplex-noise](https://www.npmjs.com/package/simplex-noise). You can read an exapliner about noise by Varun Vachhar called [Noise in Creative Coding](https://varun.ca/noise/). A quick note, `frequency` controls how quickly or slowly the noise function is "evolving over time". A low frequency would produce values that are very close to each other for close values of `x`, while a high frequency would have more volatility, and probably look more similar to the random function. `amplitude` controls the range of values we get from the noise function. `Random.noise1D` will return numbers between `-amplitude` and `amplitude`. This is very similar to the parameters of `Random.range(minValue, maxValue)`, but compressed in a single parameter.
